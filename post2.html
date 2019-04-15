@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137804408-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137804408-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>User Science Journal</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Front</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Blog
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="./post1.html">Post 1</a>
+              <a class="dropdown-item" href="./post2.html">Post 2</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/brainstorming.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Menus, Navigation, and Design</h1>
+            <h2 class="subheading">The Usability of Penny Arcade</h2>
+            <span class="meta">Posted by <a href="#">Andrew Asplund</a> on April 14, 2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <h2 class="section-heading">Introduction</h2>
+            <p><em>Penny Arcade</em> is a content creation website founded by Jerry Holkins and Mike Krahulik. Although originally based on a weekly three panel webcomic, the organization (and its associated website) have expanded to include a wide range of content. The website hosts the original web comic, several other related comics, podcasts, and at least one video series. The website, found at <a href="https://www.penny-arcade.com/">https://www.penny-arcade.com/</a>, is the front page for all of this content and is the subject of this usability analysis.</p>
+            <img src="./img/pennyarcade_front.png" class="img-fluid" alt="The Penny Arcade front page.">
+            <span class="caption text-muted">The front page of the Penny Arcade website, including the top navigation bar and associated links.</span>
+            <p>The website alternates between a few color palletes, mostly based on dark blues, oranges, and whites. In most cases, the contrast appears to work: the main body text of the page is white on a dark blue background. However, there are several examples in which low-contrast colors are used to display text. Consider the image below, which features a post from the website. The title and text of the post is white on dark blue (#002966). The author's name appears in a light blue (##04bbe4), although it should be pointed out that different authors have different colors. The date of the post, however, appears in a dark blue (#004ba6) that is only slightly lighter than the background. Although the colors form a coherent array for branding reasons, they don't necessarily work for readability.</p>
+            <img src="./img/pennyarcade-closeblues.png" class="img-fluid" alt="Close up of a post showing poor color contrast.">
+            <span class="caption text-muted">A closeup of a "post" on the front page, showing poor color contrast.</span>     
+            <p>Although the dark blue on darker blue presents a contrast issue, it is not the only color combination of concern. Several of the areas of the page feature white text on an orange background (#FF7600), a combination that corresponds to a <a href="https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=FF7600">contrast ratio of 2.67:1</a>. This is far below the <a href="https://webaim.org/articles/contrast/#sc143">WCAG 2 Contrast requirement of 4.5:1</a>.</p>       
+
+            <h2 class="section-heading">The Navigation Bar <small class="text-muted">and Site Navigation</small></h2>
+            <p>The navigation for this page primarily as a navigation bar across the top of the page. The main content types here are: Comics; News; PATV; Podcasts; Archive; Forum; and Shop. There is also a search box to the right which allows the user to search for specific text. Several of the navigation items feature a drop-down menu, providing a sort of organizational heirarchy for the website. For example, under Comics links can be found to "the original" Penny Arcade strip, The Trenches, Camp Weedonwantcha, PA Side Stories, and PA Presents. There is also a thin menu of options above the navigation bar, although all of these lead to other sites within the Penny Arcade organization.</p>
+            <img src="./img/pennyarcade_scroll.png" class="img-fluid" alt="The Penny Arcade front page, scrolled down to show the sticky navigation bar">
+            <span class="caption text-muted">The navigation bar, "stuck" to the top of the browser window.</span>      
+            <p>The entire navigation menu is sticky insomuch that sticks to the top of the web browser once the user scrolls past the banner ad at the top of the page. This means that no matter how far down the page a user goes, they always have the ability to navigate throughout the website. However, it is worth emphasizing that any link that goes to another "site" within the Penny Arcade organization does not feature any of the same navigation and it is easy to get confused. For example, three of the links under the comics navigation menu item lead to pages within the Penny Arcade website: the first (from the left) and the last two (on the right). The second and third link actually lead to external websites. This is confusing to navigate because nothing makes it clear that the user will be redirected to an external site until it happens.</p>
+            <p>Perhaps the most bizarre navigation feature on the page is the navigation link labelled archive. Unlike other conventional archives, this link actually goes to a list of keywords. Instead of providing any meaningful organization, the "archive" is just a large list of popular keywords. Given the search box in the navigation bar, one could presume that this archive is not a popular destination on the page.</p>
+            <img src="./img/pennyarcade_archive.png" class="img-fluid" alt="The Archive Page on the Penny Arcade website.">
+            <span class="caption text-muted">With a search bar, this sort of archive is of questionable utility.</span>
+            <p>The website does not use any sort of system to make it clear what the user is currently viewing or where in the site's organization that page exists. In some cases, this actually makes for rather confusing navigation. For example, there is a link under the <strong>PATV</strong> navigation menu item that takes the user to a page featuring a series of twelve videos from the Acquisitions Incorporated video series. There is also a link under the <strong>PODCASTS</strong> navigation menu item that takes the user to a page featuring a series of podcast episodes from the Acquisition Incorporated podcast series. Although these are both separate pages on the website, the content are related: the first twelve podcast episodes presented are the audio track from the twelve videos featured in the video page. It's actually a confusing distinction that likely highlights issues with the way the website has divided and organized content.</p>
+ 
+            <h2 class="section-heading">Conclusions</h2>
+            <p>The Penny Arcade website represents one of those kinds of sites that feels really sharp and impressive when you first see it but that quickly becomes something less impressive the more you use it. Although the color scheme looks really good when the page first loads, some of the colors make content difficult to read. The navigation menu looks good and stays with the user, but some of the navigation takes the user off of the page without notification or links to separate pages that show the same content (but in a different way).</p>
+            <p>What this website demonstrates is that website organization should not necessarily be done in the same way as other types of organization. Having separate navigation items for videos and podcasts makes sense, except it becomes confusing when most of the content appears under both navigation items. Similarly, although it makes sense to organize all comic content under one item, that organization is suspect when two of the five items actually take the user to an external website (without notification). In all, it feels as if the Penny Arcade website suffers from a fair number of issues that are rooted in design choices made many years ago.</p>
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/profounddark">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/profounddark/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
