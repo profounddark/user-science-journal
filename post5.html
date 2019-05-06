@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137804408-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137804408-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>User Science Journal</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Front</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Blog
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="./post1.html">Post 1</a>
+              <a class="dropdown-item" href="./post2.html">Post 2</a>
+              <a class="dropdown-item" href="./post3.html">Post 3</a>
+              <a class="dropdown-item" href="./post4.html">Post 4</a>
+              <a class="dropdown-item" href="./post5.html">Post 5</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/brainstorming.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>A Guide for Everything Except Accessibility</h1>
+            <h2 class="subheading">The Accessibility of GameFAQs</h2>
+            <span class="meta">Posted by <a href="#">Andrew Asplund</a> on April 21, 2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h2 class="section-heading">Introduction</h2>
+          <p>This post will focus on the <a href="https://gamefaqs.gamespot.com/">GameFAQs</a> website. Created in 1995 by Jeff Veasey, GameFAQs hosts walkthroughs, guides, and tutorials for a video and computer games across many different platforms. The content of the site is organized by different games across different platforms, with actual content created by users. Users create content in either a plain-text (ASCII) format or within a HTML editor provided on the GameFAQs website.</p>
+          <img src="./img/gamefaqs_front.png" class="img-fluid" alt="The GameFAQs Front Page">
+          <span class="caption text-muted">The front page of the GameFAQs Website.</span>
+          <p>When this website was first created, all of the content was maintained by a single individual (the previously mentioned Jeff Veasey). As HTML was developed, the page was updated to support new features (including a brief period in the late 1990s during which HTML TABLEs formed an important part of the website). As the site became affiliated with (and later purchased by) major internet news websites, the site was changed to include advertisements and sponsored content.</p>            
+          <p>When evaluating the accessibility of the website, it is worthwhile to distinguish between the user created content and the main website content. Although most of the analysis will focus on the main website, several comments will be made regarding user created content and how it relates to accessibility.</p>
+          <h2 class="section-heading">Initial Impressions</h2>
+          <p>On its face, GameFAQs appears somewhat accessible. The site uses a few basic colors, including light gray, dark gray, black, white, and a few shades of blue. In most cases, text appears to sufficiently contrast the background color upon which it is placed. When the browser zoom level of the site is increased dramatically, website content shifts responsively. Both of these indications suggest that a user with some level of visual impairment would be able to use the site.</p>
+          <p>There are a few features that are more problematic with regard to accessibility. Nearly all of the images that appear on the site do not have ALT tags because they are not even implemented as IMG tags but as DIV tags with a specific reference to a style sheet. Although I am not familiar with screen assisting technology, one would conclude that this method of displaying images is not conducive to accessibility.</p>
+          <h2 class="section-heading">Using Accessibility Tools</h2>
+          <p>In order to better assess the website, I installed ChromeVox, a Google screen reader for Chrome. ChromeVox allowed me to not only see how the website "looked" for people who could not see the site but also to see how navigation worked with the keyboard. One thing that it pointed out was that navigating this website with the keyboard is difficult; for some reason, the navigation bar at the top of the screen appears twice in the tab-order. A user trying to access something in the page content would have to tab through the main nav bar twice before getting to any other content. On reviewing the page in the Chrome DevTools, it is apparent that there is actually a side navigation bar (not displayed) which contains all of the same links; this bar is what the tab navigation is processing through.</p>
+          <p>Further review reveals that there are a considerable number of tab navigable elements throughout the page, making keyboard navigation extraordinarily difficult. However, this comment should be understood in the context that I rarely use the keyboard to navigate through web pages, so this may not be nearly as uncommon as I might believe.</p>
+          <h2 class="section-heading">Applying Third Party Analysis Tools</h2>
+          <p>In addition to my own investigation, I also wanted to utilize third party tools like Google Lighthouse to assess the accessibility of the site. Lighthouse returned an overall Accessibility score of 35.</p>
+          <img src="./img/gamefaqs_lighthouse.png" class="img-fluid" alt="The Google Lighthouse Accessibility Results">
+          <span class="caption text-muted">In general, GameFAQs did not fare well for accessibility.</span>
+          <p>Many of the issues recognized by Lighthouse were similar to issues observed in my initial investigation. Images do not have ALT tags. Other issues were comparable, such as iFrames not having proper identification, buttons not having discernible names, and links not having clear names. Overall, the accessibility issues found by Lighthouse related to the sorts of things that a user with a Screen Reader or other accessibility tools might face.</p>
+          <p>One issue that Lighthouse did catch was that some of the font/background contrast levels were lower than is desirable. In general, this was not the case, but it appears that in at least one or two instances, the site uses a light blue font on a light gray background, creating a somewhat difficult contrast.</p>
+          <p>In addition to Google Lighthouse, I also reviewed the site using <a href="http://wave.webaim.org/">WAVE, the Web Accessibility Evaluation Tool</a>. This tool found many of the same issues that Google Lighthouse did. For example, it many of the instances of having items without proper labeling. However, it also recognized a number of issues that I had not previously observed. For example, under the "Popular Questions" heading, every question had a link on the picture next to a separate link in the title of the question. WAVE identified these duplicate links as problematic for some screen reading technology.</p>
+          <h2 class="section-heading">Conclusions</h2>
+          <p>A significant amount of the content featured on this website is built from database queries. For example, the front page of the site has sections built around showing the most recently accessed games, recently asked questions, and sponsored content from related websites. However, most of this injected content is built without consideration for accessibility. The templates used to display data does not provide meaningful information for screen readers and other assistive technology.</p>
+          <p>The biggest "first step" that I would recommend for improving the usability of the site would be to eliminate the redundant elements in the front page (i.e., the hidden side navigation bar) and restructure the way that the queried database information is displayed. It should not be especially difficult to have meaningful names stored in the database such that the constructed links would be more information, images would have corresponding alt tabs, and overall the information would be easier for users to access to access.</p>
+
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/profounddark">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/profounddark/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
