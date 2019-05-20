@@ -51,11 +51,12 @@
               Blog
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="./post1.html">Post 1</a>
-              <a class="dropdown-item" href="./post2.html">Post 2</a>
-              <a class="dropdown-item" href="./post3.html">Post 3</a>
-              <a class="dropdown-item" href="./post4.html">Post 4</a>
-              <a class="dropdown-item" href="./post5.html">Post 5</a>
+              <a class="dropdown-item" href="./post1.html">Design and the Fan Wiki</a>
+              <a class="dropdown-item" href="./post2.html">Menus, Navigation, and Design</a>
+              <a class="dropdown-item" href="./post3.html">Confusion and Clutter</a>
+              <a class="dropdown-item" href="./post4.html">All the Mess in Your Hand</a>
+              <a class="dropdown-item" href="./post5.html">A Guide for Everything Except Accessibility</a>
+              <a class="dropdown-item" href="./post6.html">Always Getting Better</a>
             </div>
           </li>
           <li class="nav-item">
@@ -74,7 +75,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Blogging About Design</h1>
+            <h1>Design and the Fan Wiki</h1>
             <h2 class="subheading">The Usability of Memory Alpha</h2>
             <span class="meta">Posted by <a href="#">Andrew Asplund</a> on April 7, 2019</span>
           </div>
@@ -84,18 +85,19 @@
   </header>
 
   <!-- Post Content -->
-  <article>
+  <article role="main">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+          <section>
             <h2 class="section-heading">Introduction</h2>
             <p>This usability analysis will focus on the websites of <em>Fandom.com.</em> <em>Fandom.com</em> is a series of websites, formerly known as Wikia, founded by Wikipedia founder Jimmy Wales and Angela Beesley Starling. The websites provide free-to-use wiki hosting, primarily in the form of online encyclopedias focused on popular works of fiction. This includes encyclopedias of popular works of fiction such as <a href="https://dune.fandom.com/wiki/Main_Page">Frank Herbert's Dune</a>, <a href="https://gameofthrones.fandom.com/wiki/Game_of_Thrones_Wiki">George R. R. Martin's Game of Thrones</a>, and <a href="https://starwars.fandom.com/wiki/Main_Page">George Lucas's Star Wars.</a> Although all of the sites are hosted by Fandom.com, they have different administrators. Thus, for the purpose of this usability report, the Fandom Wiki for Star Trek, called <em>Memory Alpha</em>, will be analyzed. The site can be found at <a href="https://memory-alpha.fandom.com/wiki/">https://memory-alpha.fandom.com/wiki/</a></p>
             <p>There are two important elements of <em>Memory Alpha</em>, and Fandom.com wiki sites in general, that are important to understand. The content of these websites is provided without pay by users. Anybody is allowed to edit the content of the sites, although administrators of a page can lock specific contain or forbid certain users from editing. Despite that, these websites are for-profit; Fandom.com profits from advertising that appears on all of its pages. As specific elements of usability are considered, it will be important to remember these aspects of the site</p>
             <p>In addition, because of the easy comparison, there will be a number of comparisons with <a href="https://www.wikipedia.org/">Wikipedia</a>, the Free Encyclopedia. As both websites are based on the same web technology and serve a relatively similar purpose, the desire to use Wikipedia as a comparison should be apparent.</p>
-
+          </section>
+          <section>
             <h2 class="section-heading">Guidelines <small class="text-muted">for Usability</small></h2>
             <p>The guidelines used in this analysis have been taken from the US Department of Health and Human Services web standards guidelines. These and other guidelines for web usability can be found on their website at <a href="https://webstandards.hhs.gov/guidelines/">webstandards.hhs.gov/guidelines.</a> Guidelines referenced in this and other posts are summarized below:</p>
-
             <h4 id="2:1">2:1. Do Not Display Unsolicited Windows or Graphics</h4>
             <p>Guideline: Do not have unsolicited windows or graphics 'pop-up' to users.</p>
             <h4 id="2:12">2:12. Develop Pages that Will Print Properly</h4>
@@ -112,42 +114,46 @@
             <p>Guideline: Facilitate fast scrolling by highlighting major items.</p>
             <h4 id="16:5">16:5. Minimize the Number of Clicks or Pages</h4>
             <p>Guideline:To allow users to efficiently find what they want, design so that the most common tasks can be successfully completed in the fewest number of clicks.</p>
-
+          </section>
+          <section>
             <h2 class="section-heading">General Layout <small class="text-muted">and the Home Page</small></h2>
             <p>On loading of the main homepage, Memory Alpha suffers from a number of general layout issues. There are multiple unsolicited advertisements on each page <cite><a href="#2:1">(2:1)</a></cite>, starting at the very top of the page. In some cases, this pushes the desired content down the page, requiring additional scrolling on the part of the user. With two separate advertisements appearing on first load (one at the top of the page and one along the right sidebar), a navigation bar at the top of the page below a Fandom.com login/navigation bar, and two different methods for selecting a language preference, the page already feels cluttered <cite><a href="#6:1">(6:1)</a></cite>.</p>
-            <img src="./img/memoryalpha_front.png" class="img-fluid" alt="The Front Page of the Memory Alpha website">
+            <img src="./img/memoryalpha_front.png" class="img-thumbnail mx-auto d-block" alt="The Front Page of the Memory Alpha website">
             <span class="caption text-muted">The front page of Memory Alpha on first load, including all advertisements.</span>
             <p>The only content that is visible on the desktop version of Memory Alpha's webpage is the introductory text that explains the purpose of the page. It is good that the site's purpose is evident from the home page <cite><a href="#5:3">(5:3)</a></cite>. However, it is unfortunate that no other site content is visible on the home page when it loads. The closest thing that can be seen is the very top ofo a highlight box immediately below the language selector bar; this box contains links to timely and relevant content (in this case, related to the currently airing television series, <em><a href="https://memory-alpha.fandom.com/wiki/Star_Trek:_Discovery">Discovery</a></em>).</p>
             <p>Compare Memory Alpha's home page to that of Wikipedia. In a lot of ways, Wikipedia more effectively pushes content to the user. There is a great deal more content on the Wikipedia front page, which inherently raises a concern of overly dense contet <cite><a href="#6:6">(6:6)</a></cite>. However, light color coding and clear headers help distinguish the different context boxes.</p>
-            <img src="./img/wikipedia_front.png" class="img-fluid" alt="The Front Page of Wikipedia">
+            <img src="./img/wikipedia_front.png" class="img-thumbnail mx-auto d-block" alt="The Front Page of Wikipedia">
             <span class="caption text-muted">The front page of Wikipedia on first load, with considerbale more design space dedicated to the content.</span>
             <p>Overall, the amount of screen space that Memory Alpha dedicates to advertising causes measurable harm to the overall effectiveness and usability of the site. However, as the website is made available for free to both administrators and end users, those advertisements are the revenue stream that keeps the website running. Furthermore, it appears that most of the choices of ad placement are outside of the control of the wiki's adminsitrators.</p>
-            
+          </section>
+          <section>
             <h2 class="section-heading">Accessability</h2>
             <p>As most of the content of the site is text and images, there are not a lot of opportunities to provide text descriptions for non-text content <cite><a href="#3:5">(3:5)</a></cite>. All of the images either have a caption or an alt tag to provide textual context. However, a brief review indicates that ALT tags are not used consistently across the site. For example, in the screen capture below, the larger image does not have a caption but does feature an ALT tag. Given variability across different devices, especially screen readers, it would be better to include ALT tags on every image. [Note: Wikipedia does not include ALT tags on all images either.]</p>
-            <img src="./img/memoryalpha_kodos.png" class="img-fluid" alt="A portion of the Memory Alpha article for James T. Kirk">
+            <img src="./img/memoryalpha_kodos.png" class="img-thumbnail mx-auto d-block" alt="A portion of the Memory Alpha article for James T. Kirk">
             <span class="caption text-muted">The image of Kirk (above) has an ALT tag while the image of Governor Kodos (below) has none.</span>
             <p>The website does create meaningful content when sent to a printer. Having tested it across several pages on multiple browsers, the printed pages use black on white (instead of the page's white on dark gray) and eliminate all of the advertiser content <cite><a href="#2:12">(2:12)</a></cite>. The most apparent problem with the printed content is that hyperlinks appear in a much lighter color in the text. As the wiki includes a significant number of links to other articles, this makes reading the printout somewhat difficult (especially in link-dense portions of the page).</p>
-
+          </section>
+          <section>
             <h2 class="section-heading">Responsiveness <small class="text-muted">on Mobile Devices</small></h2>
             <p>With the proliferation of mobile devices that are web capable, being able to create and deliver responsive websites is important. As the website is built on the same technology as Wikipedia, it would be reasonable to assume that the sites operate similarly across mobile devices. However, this assumption may be presumptive.</p>
             <div class="container text-center">
                 <h4>Both sites on Mobile (iPhone 8)</h4>
                 <div class="row">
                     <div class="col-sm">
-                        <img src="img/kirk_memoryalpha.jpg" class="img-fluid" alt="The Memory Alpha article for James T. Kirk as it appears on an iPhone 6/7/8">
+                        <img src="img/kirk_memoryalpha.jpg" class="img-thumbnail mx-auto d-block" alt="The Memory Alpha article for James T. Kirk as it appears on an iPhone 6/7/8">
                     </div>
                     <div class="col-sm">
-                        <img src="img/kirk_wikipedia.jpg" class="img-fluid" alt="The Wikipedia article for James T. Kirk as it appears on an iPhone 6/7/8">
+                        <img src="img/kirk_wikipedia.jpg" class="img-thumbnail mx-auto d-block" alt="The Wikipedia article for James T. Kirk as it appears on an iPhone 6/7/8">
                     </div>
                 </div>
                 <span class="caption text-muted">As before, the presence of advertisements on Memory Alpha (left) distorts the usability of the site.</span>
             </div>
-            <p>The most notable differnece here is the presence of advertisements on <em>Memory Alpha</em> that take up approximately 25-30% of the total screen spacae. Coupled with the fact that the article selected displays an image at the top of the page makes the less than impressive on load <cite><a href="#5:3">(5:3)</a></cite>. In addition, advertisements pop in and pop out of the page after load, which upsets the layout of the entire page and makes for a less usable site <cite><a href="#2:1">(2:1)</a></cite></p>
-
+            <p>The most notable difference here is the presence of advertisements on <em>Memory Alpha</em> that take up approximately 25-30% of the total screen spacae. Coupled with the fact that the article selected displays an image at the top of the page makes the less than impressive on load <cite><a href="#5:3">(5:3)</a></cite>. In addition, advertisements pop in and pop out of the page after load, which upsets the layout of the entire page and makes for a less usable site <cite><a href="#2:1">(2:1)</a></cite></p>
+          </section>
+          <section>
             <h2 class="section-heading">Conclusions</h2>
             <p>As the core of <em>Fandom.com</em>'s website is built on the same technology used by Wikipedia, it makes sense that there are many similarities. Given most of what was observed here, the biggest failings of <em>Memory Alpha</em> (and likely any of the other Fandom websites) come from the extensive pushing of advertisements throughout the site. With full-width header advertisements that take up 30% of the available screen space, <em>Fandom.com</em>'s profit model is, at its core, a usability issue. When compared to their non-profit sibling, Wikipedia, the differences are notable and obvious.</p>
-
+          </section>
         </div>
       </div>
     </div>

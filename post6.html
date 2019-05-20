@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137804408-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137804408-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>User Science Journal</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Front</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Blog
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="./post1.html">Design and the Fan Wiki</a>
+              <a class="dropdown-item" href="./post2.html">Menus, Navigation, and Design</a>
+              <a class="dropdown-item" href="./post3.html">Confusion and Clutter</a>
+              <a class="dropdown-item" href="./post4.html">All the Mess in Your Hand</a>
+              <a class="dropdown-item" href="./post5.html">A Guide for Everything Except Accessibility</a>
+              <a class="dropdown-item" href="./post6.html">Always Getting Better</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/brainstorming.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Always Getting Better</h1>
+            <h2 class="subheading">The Accessibility of this Journal</h2>
+            <span class="meta">Posted by <a href="#">Andrew Asplund</a> on May 12, 2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article role="main">
+    <div class="container" role="main">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <section>
+            <h2 class="section-heading">Introduction</h2>
+            <p>For this week, the goal was to analyze the accessibility rating for this website, the User Science Journal hosted at <a href="https://profounddark.games/user-science-journal/index.html">https://profounddark.games/user-science-journal/</a>. Without thinking too much of it, the initial assumption was that it would have a relatively good accessibility rating because it was based on a standard Bootstrap template. That being said, making an effort to improve accessibility is always a goal worthy of pursuit; with that in mind, this site was put through "the ringer" of accessibility analysis.</p>
+          </section>
+          <section>
+            <h2 class="section-heading">Lighthouse and WAVE</h2>
+            <p>Because Google Lighthouse is already an integrated part of Chrome's Developer Tools, it was the first analysis performed. Overall, the site performed reasonably well, scoring an accessibility rating of 75.</p>
+            <img src="./img/lighthouse_rating.png" class="img-thumbnail mx-auto d-block" alt="The accessibility results of the Lighthouse analysis">
+            <span class="caption text-muted">The Lighthouse analysis showed a relatively good result for this site.</span>
+            <p>The Lighthouse results indicated two major deficiencies on the site with respect to accessibility: (1) the contrast ratio for one type of text (the class <em>post-meta</em>) was not high enough; and (2) several anchors had no descriptive text.</p>
+            <p>For the WAVE Evaluation, the WAVE Evaluation Tool Chrome plugin was used. Each page was reviewed with respect to accessibility. With respect to problems and errors, the WAVE Evaluation returned very similar results to the Google Lighthouse analysis. WAVE identified the same contrast issue and the textless anchors.</p>
+            <img src="./img/WAVE_errors.png" class="img-thumbnail mx-auto d-block" alt="Image of three missing anchor errors on the page">
+            <span class="caption text-muted">The three problematic anchors on each page.</span>
+            <p>Surprisingly, although each issue appeared multiple times throughout the site, it was only the two issues that were identified as accessibility issues.</p>
+          </section>
+          <section>
+            <h2 class="section-heading">Contrast and Readability.</h2>
+            <p>The index page of this blog used a light gray color for some of the text. As the text was displayed on a black background, this caused the text to be difficult to read. The original text color can be seen in the picture below:</p>
+            <img src="./img/lowcontrastcolor.png" class="img-thumbnail mx-auto d-block" alt="A picture of text from the original front page.">
+            <span class="caption text-muted">The original index.html color scheme for each article summary.</span>
+            <p>The color of that text is defined in the <a href="./css/clean-blog.css">CSS</a> for the whole page. In order to fix it, I simply set the text color to be significantly darker. The original color was #868E96. As there is no particularly good reason to have this text appear in an offset color, the text-color for that class was eliminated so the text would adopt the color of the parent element. This has resolved the issue.</p>
+          </section>
+          <section>
+            <h2 class="section-heading">HTML5 and ARIA Tags</h2>
+            <p>The WAVE Evaluation Tool identified different parts of the site that were labeled with HTML5 and/or ARIA semantic tags. All of this had been done without my involvement as part of the original template. All of the pages had properly identified headers and footers. Each blog post page also featured an <em>article</em> tag that I had not realized was there. However, this tag did help identify the main section as an article. Although neither Lighthouse nor the WAVE tool recommended additional tagging, I used this as an opportunity to provide the appropriate <em>section</em> tags for each section of the article/blog post. This was relatively easy to do since the H2 heading tags were all tagged with the class "section-heading." With that in mind, it only made sense to place those within individual sections.</p>
+            <img src="./img/sectiontags.png" class="img-thumbnail mx-auto d-block" alt="An image of the HTML source in VS Code">
+            <span class="caption text-muted">A surprisingly meta picture showing the section tags for this section.</span>
+            <p>Although I am less familiar with <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">ARIA</a>, I thought I should at least make some effort to include appropriate ARIA tags where I could. As each post page was essentially just the individual article, I thought it appropriate to add a <em>role</em> attribute on the <em>article</em> tag that appears on each page. In this case, as it was the main substance of the page, I assigned the "main" role to the tag.</p>
+          </section>
+          <section>
+            <h2 class="section-heading">The Missing Links</h2>
+            <p>The missing links are an exceedingly frustrating result of using <a href="https://fontawesome.com/">Font Awesome's icons</a>. Because Font Awesome displays icons use special classes on <em>i</em> tags, this is a difficult situation to fix. After trying a few different ways to include text without eliminating the aesthetic of the icons, I decided to just not worry about it. Automated accessibility tests like Lighthouse and WAVE were useful, but the results here were not especially helpful. Or, in the alternative, they were helpful insomuch that it was a good thing to be aware of but at this time I'm not prepared to make the changes required to fix it.</p>
+          </section>
+          <section>
+            <h2 class="section-heading">Small Changes</h2>
+            <p>Going through and re-writing small things throughout the website prompted one additional change: the navigation menu. In the original permutation of the page, the drop-down menu under "Blog" (above) had a list of the blog posts with the titles Post 1, Post 2, and so forth.</p>
+            <img src="./img/badmenu.png" class="img-thumbnail mx-auto d-block" alt="The original drop-down menu with no titles.">
+            <span class="caption text-muted">The stellar naming convention of the pre-Post 6 blog.</span>
+            <p>As that wasn't particularly helpful, I felt it would be more appropriate to include the actual names of each post. So, for each page on the site, I went through and re-wrote the blog menu. This was partially inspired by the observation by Lighthouse and WAVE regarding the anchor tags with no text. Although this wasn't the exact same issue, the intent of the problem was the same: these links had poor text to guide the user. Therefore, the titles for each post were implemented.</p>
+            <p>One other small change made to each post was to change the way that the images were being displayed. This post actually presented two challenges: (1) many of the images were snapshots of the page, making it difficult to distinguish between image and post; and (2) not all images centered properly using the <em>img-fluid</em> class. To solve the first problem, the <em>img-thumbnail</em> class was used to put the "thumbnail border" around it. In order to ensure all images, even small ones, were centered, the classes <em>mx-auto</em> and <em>d-block</em> were used to force centering. These were minor changes but they were meant to improve the overall appearance and accessibility of the site.</p>
+          </section>
+          <section>
+            <h2 class="section-heading">Conclusions</h2>
+            <p>Overall, a quick review by WAVE and Lighthouse showed that there were some easy changes that could be made to make the site better for accessibility purposes. Those results also prompted me to think about how I might make changes in the future to further improve accessibility. Although the Google Lighthouse Accessibility score only moved up to 86 after making changes, that was still improvement enough to feel good about the process.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/profounddark">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/profounddark/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
