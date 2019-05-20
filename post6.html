@@ -127,7 +127,11 @@
             <p>Going through and re-writing small things throughout the website prompted one additional change: the navigation menu. In the original permutation of the page, the drop-down menu under "Blog" (above) had a list of the blog posts with the titles Post 1, Post 2, and so forth.</p>
             <img src="./img/badmenu.png" class="img-thumbnail mx-auto d-block" alt="The original drop-down menu with no titles.">
             <span class="caption text-muted">The stellar naming convention of the pre-Post 6 blog.</span>
+            <img src="./img/badmenu_code.png" class="img-thumbnail mx-auto d-block" alt="Original HTML code for the drop-down menu.">
+            <span class="caption text-muted">The original HTML for the drop-down menu.</span>
             <p>As that wasn't particularly helpful, I felt it would be more appropriate to include the actual names of each post. So, for each page on the site, I went through and re-wrote the blog menu. This was partially inspired by the observation by Lighthouse and WAVE regarding the anchor tags with no text. Although this wasn't the exact same issue, the intent of the problem was the same: these links had poor text to guide the user. Therefore, the titles for each post were implemented.</p>
+            <img src="./img/goodmenu_code.png" class="img-thumbnail mx-auto d-block" alt="Updated HTML code for the drop-down menu.">
+            <span class="caption text-muted">The new, clearer HTML for the drop-down menu.</span>           
             <p>One other small change made to each post was to change the way that the images were being displayed. This post actually presented two challenges: (1) many of the images were snapshots of the page, making it difficult to distinguish between image and post; and (2) not all images centered properly using the <em>img-fluid</em> class. To solve the first problem, the <em>img-thumbnail</em> class was used to put the "thumbnail border" around it. In order to ensure all images, even small ones, were centered, the classes <em>mx-auto</em> and <em>d-block</em> were used to force centering. These were minor changes but they were meant to improve the overall appearance and accessibility of the site.</p>
           </section>
           <section>
