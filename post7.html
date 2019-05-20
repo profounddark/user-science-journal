@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137804408-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137804408-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>User Science Journal</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Front</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Blog
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="./post1.html">Design and the Fan Wiki</a>
+              <a class="dropdown-item" href="./post2.html">Menus, Navigation, and Design</a>
+              <a class="dropdown-item" href="./post3.html">Confusion and Clutter</a>
+              <a class="dropdown-item" href="./post4.html">All the Mess in Your Hand</a>
+              <a class="dropdown-item" href="./post5.html">A Guide for Everything Except Accessibility</a>
+              <a class="dropdown-item" href="./post6.html">Always Getting Better</a>
+              <a class="dropdown-item" href="./post7.html">Write Like Nobody is Reading</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/brainstorming.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Write Like Nobody is Reading</h1>
+            <h2 class="subheading">The Surprising Results of Google Analytics</h2>
+            <span class="meta">Posted by <a href="#">Andrew Asplund</a> on May 12, 2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article role="main">
+    <div class="container" role="main">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <section>
+            <h2 class="section-heading">Introduction</h2>
+            <p>When this blog was started back at the beginning of the course, one of the few things that I did was to add Google Analytics links (as instructed in class). Since then, I have completely forgotten about it until this week prompted a review of the analytics. When I started writing this post, I titled it <strong>Write Like Nobody is Reading: The Analytics of One</strong>. I wrote that before I actually looked at any of the Analytics data. However, as will be demonstrated, that is not quite the case here.</p>
+          </section>
+          <section>
+            <h2 class="section-heading">A Lifetime of Users</h2>
+            <p>After logging into Google Analytics, I was surprised to see the graph of users show more than one, although it really only showed 3 or 4. However, this prompted me to adjust the date range in an effort to capture more data. By setting the range all the way back to the day I set up Google Analytics, I was able to see something unexpected.</p>
+            <img src="./img/lifetimegraph.png" class="img-thumbnail mx-auto d-block" alt="The Graph of Users over the Lifetime of the Site">
+            <span class="caption text-muted">As this graph of users shows, somebody is actually looking at this site.</span>
+            <p>As far as Google can tell, twenty different users have frequented this blog. Or, in the alternative, I have used upwards of fifteen different devices (with disconnected web browsers) to look at my site. <em>[Note: That's probably a joke, right?]</em> Although I was quick to assume that I was responsible for most of this traffic, it also occurred to me that most of the time that I spend looking at my website is when it's running on a localhost (for testing). A quick check revealed that this DOES in fact count; as I am writing this and testing it on my localhost, Google Analytics reports a live user viewing post7.html. This is most important because post7.html only exists on the localserver (at the time of this writing).</p>
+            <img src="./img/realtime.png" class="img-thumbnail mx-auto d-block" alt="Realtime User Analytics at the time I am writing this.">
+            <span class="caption text-muted">This is actually probably bad news insomuch that "somebody is reading this" is concerned.</span>
+            <p>The most immediate takeaway from this data is that every time I use VS Code and the LiveServer to test my HTML, my Google Analytics is likely getting messed with. Right as I typed this sentence, I saw a "Pageview per second" emanate on the real-time tracker. A pageview generated by my LiveServer running in the background. Just SAVING the page generates a view. <em>*sigh*</em></p>
+          </section>
+          <section>
+            <h2 class="section-heading">Depressing Demographics</h2>
+            <p>One feature that Google Analytics allows is Demographic tracking. In theory, this would tell me something about the demographics of the people visiting my site. Or, perhaps more correctly, what Google has determined about the demographics of the people visiting my site.</p>
+            <img src="./img/demographics.png" class="img-thumbnail mx-auto d-block" alt="The Demographics Report for the Site that is blank.">
+            <span class="caption text-muted">Before you ask, yes. Yes, Demographics tracking was turned on when Analytics was set up.</span>
+            <p>It may just be that Google doesn't have the tools necessary to determine demographic data. Or, in the alternative, it may be related to the fact that so few users visit the site so Google is unable to effectively predict the demographic data. Either way, Demographics ended up being a "bust."</p>
+          </section>
+          <section>
+            <h2 class="section-heading">Acquisitions and Referrals</h2>
+            <p>The Acquisitions section of Google Analytics told more of the story that (likely) confirmed some of my theories. All of the Google-tracked users come from three source: (1) direct; (2) seattleu.instructure.com (Canvas); and (3) github.com. These three sources say quite a bit about the sorts of people that are arriving at this site.</p>
+            <img src="./img/referrals.png" class="img-thumbnail mx-auto d-block" alt="A picture of referring sources data.">
+            <span class="caption text-muted">This picture says quite a few words, and most of them are "it's almost all me."</span>
+            <p>The most suspicious referral stream here is actually the direct. Direct acquisitions typically mean that people are entering the website URL directly (whether it is a copy from another source or typed in manually). Although there's always room for random visitors, I'm reasonably certain that the direct visitors are almost entirely me, whether it is me opening the window from VS Code, typing the URL in manually on my web browser, or following a link from my bookmarks bar. And, given that I use multiple different devices to access my site, including three different desktop/laptop computers, from a variety of different locations, it seems reasonable to conclude that a lot of these direct acquisitions are, in fact, me.</p>
+            <p>Of course, I could be wrong.</p>
+            <img src="./img/referral_provider.png" class="img-thumbnail mx-auto d-block" alt="All of the direct users with their service provider.">
+            <span class="caption text-muted">And, apparently, now I discover that it isn't me at all.</span>
+            <p>This was surprising because suddenly I realize that only 2-3 of these directly referred users are me. As I do some of my work while on campus through the University's internet, one of them is likely me. As it ends up, the CascadeLink user is also me. However, several of these other users are definitively NOT ME.</p>
+            <img src="./img/serviceproviders.png" class="img-thumbnail mx-auto d-block" alt="Service Providers across all Users">
+            <span class="caption text-muted">All of the Service Provider information available. I guess I'm not as big a deal to my site as I thought.</span>
+            <p>In an attempt to "fine-tune" the data further, it appears that it is likely that I account for at least one or two of the referred users, although this is difficult to determine for certain. I am relying on the fact that my Internet Service Provider (CascadeLink, LLC) is relatively uncommon. Thus, it tends to be a good indicator that a specific user is me. However, CascadeLink only appears on one of the direct referral users and one github-referred user (likely me when I'm testing that the Github link works).</p>
+          </section>
+          <section>
+            <h2 class="section-heading">More User Data</h2>
+            <p>Google Analytics provides a variety of data about the users that visit this site. Chrome is the most popular browser used to visit the site, with 12 of 20 users using it. Safari comes in next, with 6 out of 20 users. Android Webview and Microsoft Edge make up the other two users' browsers. Only one user is recorded as a mobile user which is consistent with the single Android Webview user. One could imagine that most of the people visiting the site are doing it as part of the class. That means that most people are probably doing it with the intent of commenting on it (through Canvas). Or, in the alternative, somebody could be looking at my site seeking inspiration for their own assignment. If anything, the single mobile user presents something of an oddity; who is out there viewing the site on their mobile device?</p>
+          </section>
+          <section>
+            <h2 class="section-heading">Conclusions</h2>
+            <p>This "introduction" to Google Analytics was quite surprising. As I suggested in the introduction to this post, I expected it to be a whole lot of me. And, more importantly, I worried that me testing the site on a local web server would negatively impact the data. As it ends up, the local server doesn't seem to matter much. What might matter is me accessing the website from a number of different locations using different devices. But, the biggest takeaway is that some people are actually looking at the site that are not me!</p>
+            <p>That's really the biggest surprise.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/profounddark">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/profounddark/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
