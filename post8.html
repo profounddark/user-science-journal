@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137804408-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137804408-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>User Science Journal</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Front</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Blog
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="./post1.html">Design and the Fan Wiki</a>
+              <a class="dropdown-item" href="./post2.html">Menus, Navigation, and Design</a>
+              <a class="dropdown-item" href="./post3.html">Confusion and Clutter</a>
+              <a class="dropdown-item" href="./post4.html">All the Mess in Your Hand</a>
+              <a class="dropdown-item" href="./post5.html">A Guide for Everything Except Accessibility</a>
+              <a class="dropdown-item" href="./post6.html">Always Getting Better</a>
+              <a class="dropdown-item" href="./post7.html">Write Like Nobody is Reading</a>
+              <a class="dropdown-item" href="./post8.html">Making Goals for Good</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/brainstorming.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Making Goals for Good</h1>
+            <h2 class="subheading">Tracking Goals with Analytics</h2>
+            <span class="meta">Posted by <a href="#">Andrew Asplund</a> on May 26, 2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article role="main">
+    <div class="container" role="main">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <section>
+            <h2 class="section-heading">Introduction</h2>
+            <p>Having spent time talking about Google Analytics <a href="./post7.html">last time</a>, now the focus was setting up a goal and a funnel. The idea is to learn to better use Google Analytics and learn how important features (such as goals and funnels) work.</p>
+          </section>
+          <section>
+            <h2 class="section-heading">Reading the Old Stuff</h2>
+            <p>Because this is just a basic blog website, I figured the best way to "test" the goal and funnel system was to advertise a page as a "feature" on the front page. Because I don't really advertise this site (outside of turning in assignments), I figured the best thing to do was set up an Analytics goal for a page that wouldn't otherwise be viewed often and then create something that promotes that page. Once that was done, it would be straightforward enough to then direct people to the site and see if Google observes the directed traffic.</p>
+            <p>For all intents and purposes, the oldest page on the site is the very first post that I created at the beginning of the quarter. Therefore, <a href="./post1.html">this post</a> (in which I looked at the FANDOM website for Star Trek, Memory Alpha) seemed like a good target for testing. In order to "promote" the page, I decided to create a "duplicate" entry for it on index.html and flag it as a "featured page," including tagging it with stars to attract attention.</p>
+            <img src="./img/featuredpage.png" class="img-thumbnail mx-auto d-block" alt="A picture of the Featured Page markings.">
+            <span class="caption text-muted">After three quarters, this is the best I could manage.</span>
+            <p>The analytical intent is that these "featured post" markings will steer more websites viewers towards this page from the front page (index.html). Hopefully, this will create something that Google Analytics can track.</p>
+          </section>
+          <section>
+            <h2 class="section-heading">Setting up the Technical Stuff</h2>
+            <p>With an analytical target (the first post) and content to direct people there, the next step was to set up a "Goal" within Google Analytics. Based on what was established previously, the actual goal was relatively simple.</p>
+            <img src="./img/google_goal.png" class="img-thumbnail mx-auto d-block" alt="Google Goal image">
+            <span class="caption text-muted">This goal wasn't super complicated, at least as it was implemented here.</span>
+            <p>The primary goal added to Google Analytis was essentially this: visit the first post (post1.html). As I had also created content to motivate people to go to the page, it seemed appropriate to also add that as a funnel to track. Essentially, I wanted to see how many people went to the first post and, of all those, how many got there by first going to the front page. In essence, the goal is to determine, "Does this 'featured post' marking bring people to the page?"</p>
+          </section>
+
+          <section>
+            <h2 class="section-heading">Conclusions</h2>
+            <p>As this post is summarizing what is being done for future endeavors, there isn't much to say with respect to its effectiveness. Only time will tell. As I circulate the link to my User Science Journal across my social media websites, Google Analytics will help determine whether or not the featured article content drives viewers.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/profounddark">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/profounddark/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
