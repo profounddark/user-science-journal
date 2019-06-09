@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137804408-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137804408-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>User Science Journal</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Front</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Blog
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="./post1.html">Design and the Fan Wiki</a>
+              <a class="dropdown-item" href="./post2.html">Menus, Navigation, and Design</a>
+              <a class="dropdown-item" href="./post3.html">Confusion and Clutter</a>
+              <a class="dropdown-item" href="./post4.html">All the Mess in Your Hand</a>
+              <a class="dropdown-item" href="./post5.html">A Guide for Everything Except Accessibility</a>
+              <a class="dropdown-item" href="./post6.html">Always Getting Better</a>
+              <a class="dropdown-item" href="./post7.html">Write Like Nobody is Reading</a>
+              <a class="dropdown-item" href="./post8.html">Making Goals for Good</a>
+              <a class="dropdown-item" href="./post9.html">Testing with Google</a>
+              <a class="dropdown-item" href="./post10.html">Wrapping Up with Analytics</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/brainstorming.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Testing with Google</h1>
+            <h2 class="subheading">More Experiments with Analytics</h2>
+            <span class="meta">Posted by <a href="#">Andrew Asplund</a> on June 2, 2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article role="main">
+    <div class="container" role="main">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <section>
+            <h2 class="section-heading">Introduction</h2>
+            <p>In the last <a href="post7.html">few</a> <a href="post8.html">posts</a>, I talked a bit about working with Google Analytics. Google Analytics has a lot of functionality available to users and provides a lot of opportunities to create data based on user visits to the site. After a few basic experiments with the website, I thought it a good opportunity to try something more complicated.</p>
+          </section>
+          <section>
+            <h2 class="section-heading">Results of Goal Testing</h2>
+            <p>The original goal I created was to see how much traffic was directed to post1.html. After a week or two of running, the first goal had a been completed 25 times. There were only a few more completions since the <a href="post8.html">previous writing</a>, but a lot of that can be attributed to the fact that nobody really visits the website unless I ask people to do so.</p>
+            <img src="./img/funnel.png" class="img-thumbnail mx-auto d-block" alt="Google Funnel Diagram">
+            <span class="caption text-muted">This might suggest that the funnel is useful. Maybe.</span>
+            <p>One thing that was worth looking at was the funnel conversion rate. Here, of the 25 sessions visiting the front page (index.html) directly, 10 of them went to post1.html next. It's hard to draw too many conclusions from this, but it suggests that the "featured page" content seems to drive people to go to the page in question.</p>
+          </section>
+          <section>
+            <h2 class="section-heading">Creating an Experiment</h2>
+            <p>When I first implemented an Analytics goal, I actually made substantive changes to the website in order to see if I could drive traffic to a specific page. Specifically, I created a rather substantive and graphical "featured page" piece that was meant to push people to a specific page. However, I did this without thinking about it; I just went with something obvious. Having had that display up for a bit, it occurred to me that I didn't really spend much time thinking about whether that code would matter, or, if the funnel I set up was properly tracking what I hoped it would be tracking. This seemed like meaningful setup for a Google Analytics Experiment.</p>
+            <p>For this test, my basic hypothesis was that having the "featured page" content pushed more users to go to the specific post, post1.html. In the alternative, it did not matter. The hypothesis may seem somewhat obvious; that does not concern me too much. I also believe it will be valuable to have some sense of how big a difference the "featured page" content actually makes.</p>
+            <p> In order to test the above hypothesis, I created a duplicate copy of the front page that did not have the "featured page" content on it. Within the Google Analytics site, I created the experiment in which every visitor to the website would be directed to one of two pages: the original index.html that contained the "featured page" content, and the alternative index.html that did not.</p>
+          </section>
+          <section>
+            <h2 class="section-heading">Results</h2>
+            <p>Unfortunately, it takes time to generate test data. This will be updated once data has been made available.</p>
+          </section>
+          <section>
+            <h2 class="section-heading">Conclusions</h2>
+            <p>The biggest discovery was the sort of things that Google Analytics lets a webmaster do without a lot of work. Setting up the test is straightforward. Although it remains to be seen how effective the actual test is, it opens up a lot of possibilities for website testing. In the alternative, it does feel a bit discomforting as well; the idea that Google has positioned itself to be a fundamental backbone of the web seems concerning. Although I have no doubt there are other analytics packages available, I feel like most people are probably relying on Google.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/profounddark">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/profounddark/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Andrew Asplund 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
